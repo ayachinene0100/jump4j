@@ -11,12 +11,16 @@ repositories {
   mavenCentral()
 }
 
+dependencies {
+  implementation("org.apache.commons:commons-lang3:3.13.0")
+}
+
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
   version.set("2022.3.1")
 
-  plugins.set(listOf("IdeaVIM:2.1.0"))
+  plugins.set(listOf("com.intellij.java", "IdeaVIM:2.1.0"))
 }
 
 tasks {

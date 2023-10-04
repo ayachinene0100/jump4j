@@ -8,24 +8,33 @@
   <name>Jump4j</name>
 
   <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-  <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+  <vendor email="supporot@yourcompany.com" url="https://www.yourcompany.com">YourCoompany</vendor>
 
   <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
        Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
        Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
   <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    jiojiollllllllk
+    llllllll
+
+    kiiooioilllllll
   ]]></description>
 
   <!-- Product and plugin compatibility requirements.
        Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
   <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.java</depends>
   <depends>IdeaVIM</depends>
 
   <!-- Extension points defined by the plugin.
        Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
-  <extensions defaultExtensionNs="com.intellij">
-
+  <extensions defaultExtensionNs="IdeaVIM">
+    <vimExtension implementation="org.ayachinene.jump4j.Jump4JExtension" name="jump4j">
+      <aliases>
+        <alias name="https://github.com/ayachinene0100/jump4j" />
+        <alias name="ayachinene0100/jump4j" />
+        <alias name="jump4j"/>
+      </aliases>
+    </vimExtension>
   </extensions>
 </idea-plugin>

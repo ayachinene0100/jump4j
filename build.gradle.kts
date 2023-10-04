@@ -18,9 +18,9 @@ dependencies {
 // Configure Gradle IntelliJ Plugin
 // Read more: https://plugins.jetbrains.com/docs/intellij/tools-gradle-intellij-plugin.html
 intellij {
-  version.set("2022.3.1")
+  version.set("2023.2.2")
 
-  plugins.set(listOf("com.intellij.java", "IdeaVIM:2.1.0"))
+  plugins.set(listOf("com.intellij.java", "IdeaVIM:2.5.1"))
 }
 
 tasks {

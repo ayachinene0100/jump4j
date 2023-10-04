@@ -4,6 +4,7 @@ import com.intellij.psi.*;
 import com.maddyhome.idea.vim.api.ExecutionContext;
 import com.maddyhome.idea.vim.api.VimCaret;
 import com.maddyhome.idea.vim.api.VimEditor;
+import com.maddyhome.idea.vim.command.OperatorArguments;
 import com.maddyhome.idea.vim.extension.ExtensionHandler;
 import org.jetbrains.annotations.NotNull;
 
@@ -23,7 +24,7 @@ public class ParameterHandler implements ExtensionHandler {
     }
 
     @Override
-    public void execute(@NotNull VimEditor vimEditor, @NotNull ExecutionContext context) {
+    public void execute(@NotNull VimEditor vimEditor, @NotNull ExecutionContext context, @NotNull OperatorArguments operatorArguments) {
         PsiFile psiFile = Utils.getPsiFile(vimEditor);
         if (psiFile == null) {
             return;
